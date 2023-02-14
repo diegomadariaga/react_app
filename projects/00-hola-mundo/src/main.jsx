@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-const createLikeButton = (text) => {
+const ButtonLike = ({text}) => {
     return (
         <button>
             {" "}
@@ -26,7 +26,8 @@ const createLikeButton = (text) => {
 };
 root.render(
     <React.Fragment>
-        {createLikeButton("Like")}
-        {createLikeButton("me gusta")}
+        <ButtonLike text="Like" />
+        <ButtonLike text="another like" />
+        <ButtonLike text="another like 2" />
     </React.Fragment>
 );
