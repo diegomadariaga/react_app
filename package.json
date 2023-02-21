@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/diegomadariaga/react_app/issues"
   },
-  "homepage": "https://github.com/diegomadariaga/react_app#readme"
+  "homepage": "https://github.com/diegomadariaga/react_app#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.52.0",
+    "@typescript-eslint/parser": "^5.52.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-react": "^7.32.2"
+  }
 }
