@@ -7,17 +7,20 @@ import "./App.css";
  * @returns A div with a h1 inside of it.
  */
 export function App() {
-    const addAt = (userName) => {
-        if (userName.startsWith("@")) {
-            return userName;
-        }
-        return `@${userName}`;
-    };
     return (
         <section className="App">
-            <TwitterFollowCard isFollowing={true} name="midudev" userName="midudev" addAt={addAt} />
-            <TwitterFollowCard isFollowing={false} name="elon musk" userName="elonmusk" addAt={addAt} />
-            <TwitterFollowCard isFollowing name="james bond" userName="jamesbond" addAt={addAt} />
+            <TwitterFollowCard userName="billgates" >
+                <strong>miguel duran</strong>
+            </TwitterFollowCard>
+            <TwitterFollowCard  userName="elonmusk">
+                <strong>elon musk</strong>
+            </TwitterFollowCard>
+            <TwitterFollowCard  userName="jamesbond">
+                <strong>james bond</strong>
+            </TwitterFollowCard>
+            <TwitterFollowCard >
+                <strong>desconocido</strong>
+            </TwitterFollowCard>
         </section>
     );
 }
